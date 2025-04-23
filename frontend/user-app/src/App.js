@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("/api/data")
+    fetch("https://web-prog-task-backend.onrender.com/api/data")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
